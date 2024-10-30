@@ -1,0 +1,55 @@
+/* Reseta o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* Estilo para o menu */
+.menu {
+    list-style: none; /* Remove bullets das listas */
+    position: fixed; /* Fixa o menu no lado esquerdo */
+    left: 0;
+    top: 0;
+    width: 30%; /* Ocupa 30% da largura da tela */
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    background-color: #008CC9; /* Cor de fundo do menu */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.menu li {
+    width: 100%; /* Ocupa toda a largura do menu */
+}
+
+.menu li a, .menu li input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    background-color: #005b8d; /* Cor de fundo ao passar o mouse */
+}
+
+.menu li input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
